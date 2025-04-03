@@ -40,11 +40,11 @@ Tools Used: Flask
 
 Process:
 
--Developed a Flask API (app.py) to serve predictions\
+-Developed a Flask API (app.py) to serve predictions 
 
--Integrated HTML & CSS for the frontend\
+-Integrated HTML & CSS for the frontend 
 
--Used pickle to save and load the trained model\
+-Used pickle to save and load the trained model 
 
 **5. Steps to Run the Deployed Model**
 
