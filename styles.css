@@ -1,12 +1,12 @@
 html,body {
-        background: url("../static/background.jpg") no-repeat center center fixed;
+        background: url("../static/background.jpg") 
         background-size: cover;
         display: flex;
-        align-items: flex-start;  /* Aligns content towards the top */
-        justify-content: flex-start;  /* Positions the container to the left */
+        align-items: flex-start; 
+        justify-content: flex-start;  
         height: 100vh;
-        padding-top: 150px; /* Moves content lower */
-        padding-left: 50px;  /* Adds spacing from the left */
+        padding-top: 150px; 
+        padding-left: 50px;  
         margin: 0;
       
 }
@@ -17,20 +17,20 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.3); /* White overlay to fade background */
-    z-index: -1; /* Places it behind the content */
+    background: rgba(255, 255, 255, 0.3); 
+    z-index: -1; 
 }
 .container {
-    width: 300px;  /* Reduced width */
+    width: 300px;  
     padding: 15px;
-    background: rgba(249, 139, 50, 0.97); /* Slightly transparent to show background */
+    background: rgba(249, 139, 50, 0.97); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     text-align: center;
     position: fixed;
     left: 390px;
     top: 55%;
-    transform: translateY(-50%); /* Centers vertically */
+    transform: translateY(-50%); 
 }
 h2 {
     color: #333;
@@ -69,7 +69,7 @@ h1{
 }
 header {
     width: 100%;
-    height: 100px;  /* Adjust height */
+    height: 100px;  
     background-color: rgb(25, 25, 175);
     color: white;
     text-align: center;
@@ -77,5 +77,5 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensures header stays above other content */
+    z-index: 1000; 
 }
