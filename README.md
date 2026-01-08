@@ -1,26 +1,46 @@
-**Project Title: Fuel Consumption Prediction Using Multiple Linear Regression**
+# ⛽ Fuel Consumption Prediction Using Multiple Linear Regression
+ 
+## 1. Introduction
+
+### Objective
+The objective of this project is to **predict fuel consumption** based on multiple vehicle-related parameters using a **machine learning approach**.  
+By leveraging historical vehicle data, the model estimates fuel usage, helping users analyze fuel efficiency and make informed decisions.
+
+### Problem Statement
+Fuel consumption is a critical factor influencing **transportation efficiency, environmental sustainability, and operational costs**.  
+Accurate prediction of fuel usage can assist individuals, businesses, and policymakers in improving vehicle efficiency, reducing fuel expenses, and supporting sustainability initiatives.
+
+### Dataset Description
+The dataset contains information for various car models, including:
+- Vehicle model name  
+- Engine size  
+- Number of cylinders  
+- Fuel consumption  
+- CO₂ emissions  
+- Smog rating  
+
+This data is used to train a regression model for fuel consumption prediction.
+
  
 
-**1. Introduction:**
-  
-Objective: This project aims to predict fuel consumption based on multiple vehicle-related parameters using a machine learning approach. By leveraging historical data, the 
-model can estimate fuel usage, helping users optimize fuel efficiency.
+## 2. Data Collection & Preprocessing
 
-Problem Statement: Fuel consumption is a critical factor affecting transportation efficiency, environmental sustainability, and operational costs. Predicting fuel usage 
-accurately can help individuals, businesses, and policymakers make informed decisions regarding vehicle efficiency, fuel economy, and sustainability measures.
+### Data Source
+- Fuel Consumption Dataset
 
-Dataset Description: This dataset contains features like vehicle model name, engine size, cylinders, fuel consumption, CO2 emissions, smog rating, etc.for various car 
-models.
- 
-
-**2. Data Collection & Preprocessing**
-
-Data Source: Fuel consumption dataset
+### Preprocessing Steps
+- Removal of irrelevant columns
+- Handling missing values
+- Selection of key numerical features
+- Preparation of cleaned data suitable for model training
 
 
-**3. Model Development**
-   
-Algorithm Used: Multiple Linear Regression
+---
+
+## 3. Model Development
+
+### Algorithm Used
+- **Multiple Linear Regression**
 
 Formula for Prediction: Y = b0 + b1X1 + b2X2 + b3X3
 
@@ -36,40 +56,41 @@ b1,b2,b3 = Regression Coefficients
 
 **4. Model Deployment**
 
-Tools Used: Flask
+# 4. Model Deployment
 
-Process:
+### Tools Used
+- **Flask (Python Web Framework)**
 
--Developed a Flask API (app.py) to serve predictions 
+### Deployment Process
+- Developed a Flask application (`app.py`) to serve predictions
+- Integrated **HTML and CSS** for the frontend interface
+- Used **pickle** to save and load the trained machine learning model
+- Enabled real-time prediction through a web-based interface
 
--Integrated HTML & CSS for the frontend 
 
--Used pickle to save and load the trained model 
+## 5. Steps to Run the Deployed Model
+```bash
+Step 1: Clone the Repository
 
-**5. Steps to Run the Deployed Model**
-
-1) Clone the repository
+git clone <repository_link>
+cd fuel-consumption-prediction
    
-    git clone <repository_link>\
-    cd fuel-consumption-prediction
-   
-2. Create and Activate a Virtual Environment
-
-    python -m venv venv_name \
-    venv_name\Scripts\activate
+Step 2: Create and Activate a Virtual Environment
+python -m venv venv_name
+venv_name\Scripts\activate
         
-3) Install dependencies 
+Step 3: Install Dependencies
+pip install scikit-learn flask pandas numpy
 
-   eg. pip install scikit-learn
+Step 4: Run the Flask Application
+python app.py
 
-4) Run the Flask app
+Step 5: Access the Web Interface
+Open the browser and go to:
 
-   python app.py
-
-5)Access the Web Interface
-
-  - Open http://127.0.0.1:5000/ in a browser\
-  - Input vehicle details and get predicted fuel consumption
+http://127.0.0.1:5000/
+Enter vehicle details
+Get the predicted fuel consumption instantly
 
 
 
